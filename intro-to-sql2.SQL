@@ -1,9 +1,12 @@
 -- Which resource did you choose to use?
 Challenge #4
 
--- What are three things you learned during this lab? Joining 2 tables, updating tables, navigating information between 2 tables.
+-- What are three things you learned during this lab? 
+Joining 2 tables, updating tables, navigating information between 2 tables.
 
--- What is the average price of a hotel room that can be booked at Boutique Travel Travel Boutique ?  1366.6666666666666667
+-- What is the average price of a hotel room that can be booked at Boutique Travel Travel Boutique ?  
+1366.6666666666666667
+
 SELECT
     AVG(price)
 FROM
@@ -13,7 +16,9 @@ INNER JOIN
 ON
     hotels.id = rooms.hotel_id;
 
--- Which hotels have vacancies?  Hotelicopter, Hotel California, The Great Northern
+-- Which hotels have vacancies?  
+Hotelicopter, Hotel California, The Great Northern
+
 SELECT DISTINCT
     hotels.name
 FROM
@@ -140,4 +145,4 @@ JOIN
 ON
     hotels.id = rooms_guests.hotel_id
 ORDER BY 
-guest_name ASC;
+    guest_name ASC;
